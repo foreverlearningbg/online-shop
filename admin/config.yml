@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: foreverlearningbg/online-shop
+  name: git-gateway
   branch: main
 
 media_folder: "images/uploads"
@@ -15,5 +14,4 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "text" }
-      - { label: "Price", name: "price", widget: "number" }
       - { label: "Image", name: "image", widget: "image" }

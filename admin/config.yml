@@ -1,18 +1,19 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: foreverlearningbg/online-shop
   branch: main
 
-media_folder: "uploads"
-public_folder: "/uploads"
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
 
 collections:
   - name: "products"
-    label: "Продукти"
+    label: "Products"
     folder: "products"
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Име", name: "title", widget: "string" }
-      - { label: "Описание", name: "description", widget: "text" }
-      - { label: "Цена", name: "price", widget: "string" }
-      - { label: "Снимка", name: "image", widget: "image" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Price", name: "price", widget: "number" }
+      - { label: "Image", name: "image", widget: "image" }
